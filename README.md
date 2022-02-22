@@ -2,7 +2,8 @@
 This project extracts information from Ninja RMM and stores it in a SQL database for reporting purposes.
 
 ## Credentials
-Ninja RMM Account:
+* Do not store ANY account related information in this repo (it is a public repo)
+* Database connection string needs to be stored outside of the project as well (but will be needed before we connect to database).
 
 ## Links
 * Authorization: https://app.ninjarmm.com/apidocs/?links.active=authorization#/Endpoints/get_authorize
@@ -17,8 +18,6 @@ Ninja RMM Account:
 * Alerts - Id, Name, DeviceId, Severity, Date, Type, Name, Subject
 
 ## Requirements
-* Do not store ANY account related information in this repo (it is a public repo)
-* Database connection string needs to be stored outside of the project as well (but will be needed before we connect to database).
 * Console application that will communicate with API to get all devices and alerts from Ninja.
 * Currently - will wipe out all existing data and fill with new data each time
 * Needs to properly authenticate and store a token to refresh the token on the next run
