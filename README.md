@@ -18,7 +18,7 @@ This project extracts information from Ninja RMM and stores it in a SQL database
 * Alerts - Id, Name, DeviceId, Severity, Date, Type, Name, Subject
 
 ## Requirements
-* Console application that will communicate with API to get all devices and alerts from Ninja.
+* Simple web application that can be triggered by a visit to a URL
 * Currently - will wipe out all existing data and fill with new data each time
 * Needs to properly authenticate and store a token to refresh the token on the next run
 * Refresh token each time (so it won't expire?)
@@ -27,3 +27,4 @@ This project extracts information from Ninja RMM and stores it in a SQL database
 
 ## Future Requirements
 * We plan to do reporting using Zoho Analytics.
+* Also allow triggering via a Hangfire task, or other job scheduler
